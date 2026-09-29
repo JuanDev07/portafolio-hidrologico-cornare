@@ -9,7 +9,7 @@ st.set_page_config(
     layout="wide"
 )
 
-# Estilo CSS para fijar el tamaño de las imágenes
+# Estilo CSS para fijar el tamaño uniforme de las imágenes
 st.markdown("""
     <style>
     [data-testid="stImage"] img {
@@ -23,16 +23,16 @@ st.markdown("""
 # ------------------------------------------------------------------
 # ENCABEZADO
 # ------------------------------------------------------------------
-st.title("📚 Portafolio de Proyectos")
+st.title("📚 Portafolio de Proyectos y Aplicaciones")
 st.subheader("Materia: Programación Avanzada | Institución Universitaria Pascual Bravo")
 st.markdown("""
-Bienvenido al repositorio interactivo de la materia. Haz clic en **"Abrir Proyecto"** en cualquiera de las tarjetas o navega desde el menú lateral para ejecutar la aplicación en tiempo real.
+Bienvenido al repositorio interactivo de la materia. Haz clic en **"Abrir Proyecto"** en cualquiera de las tarjetas o navega mediante la barra lateral izquierda para ejecutar la aplicación correspondiente.
 """)
 
 st.divider()
 
 # ------------------------------------------------------------------
-# MAPEO EXACTO CON LOS ARCHIVOS DE TU CARPETA /PAGES
+# CATÁLOGO COMPLETO DE PROYECTOS (RUTAS EXACTAS DE /PAGES)
 # ------------------------------------------------------------------
 PROYECTOS = [
     {
@@ -57,6 +57,13 @@ PROYECTOS = [
         "tags": "Statsmodels • Pronósticos"
     },
     {
+        "titulo": "📊 Regresión Lineal",
+        "descripcion": "Ajuste de modelos de regresión lineal simple y múltiple con evaluación de métricas R² y RMSE.",
+        "imagen": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=350&fit=crop&q=80",
+        "page": "pages/app_regresion.py",
+        "tags": "Scikit-Learn • Regresión"
+    },
+    {
         "titulo": "📐 Conceptos de Regresión",
         "descripcion": "Demostración interactiva sobre supuestos de regresión, residuos y multicolinealidad.",
         "imagen": "https://images.unsplash.com/photo-1509228468518-180dd4864904?w=600&h=350&fit=crop&q=80",
@@ -64,11 +71,18 @@ PROYECTOS = [
         "tags": "Estadística • Simulación"
     },
     {
-        "titulo": "📊 Regresión Lineal",
-        "descripcion": "Ajuste de modelos de regresión lineal simple y múltiple con evaluación de métricas R² y RMSE.",
-        "imagen": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=350&fit=crop&q=80",
-        "page": "pages/app_regresion.py",  # Recuerda subir este archivo si aún no está en pages/
-        "tags": "Scikit-Learn • Regresión"
+        "titulo": "🌱 Clasificación / Análisis de Suelos",
+        "descripcion": "Modelamiento y caracterización de muestras de suelo mediante algoritmos de aprendizaje supervisado.",
+        "imagen": "https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=600&h=350&fit=crop&q=80",
+        "page": "pages/app_Suelos.py",
+        "tags": "Machine Learning • Suelos"
+    },
+    {
+        "titulo": "🌐 Monitoreo IoT",
+        "descripcion": "Visualización y procesamiento de datos recolectados mediante sensores e infraestructura IoT.",
+        "imagen": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&h=350&fit=crop&q=80",
+        "page": "pages/app_IoT.py",
+        "tags": "IoT • Sensores • Real-time"
     },
     {
         "titulo": "⚡ Descenso de Gradiente",
