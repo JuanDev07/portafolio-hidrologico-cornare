@@ -36,7 +36,7 @@ PROYECTOS = [
     {
         "titulo": "💨 Predicción de Calidad del Aire",
         "descripcion": "Análisis y modelamiento de variables ambientales para la predicción de calidad del aire.",
-        "imagen": "https://images.unsplash.com/photo-1534088568595-a066f410bcda?w=600&q=80",
+        "imagen": "https://images.unsplash.com/photo-1534088568595-a066f410bcda?w=600&h=350&fit=crop&q=80",
         "tipo": "externo",
         "target": "https://prediccion-aire.streamlit.app/",
         "tags": "Machine Learning • Pandas"
